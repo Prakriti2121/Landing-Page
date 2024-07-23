@@ -1,5 +1,4 @@
-import React from 'react';
-import Layout from '../layouts/Layout.astro'; 
+import React from 'react'; 
 import companyLogo from '../assets/pagelogo.png'; 
 
 const Navbar = () => {
