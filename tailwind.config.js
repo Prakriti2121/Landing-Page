@@ -8,7 +8,7 @@ export default {
       },
       colors: {
          darkGrayishBlue: '#6C6E74',
-         brightRed: '#FF0000',
+         brightRed: '#F3603C',
         brightRedLight: '#E57373',
         "almost-white": "hsl(0, 0%, 98%)",
         "medium-gray": "hsl(0, 0%, 41%)",
