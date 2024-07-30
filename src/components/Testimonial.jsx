@@ -3,6 +3,8 @@ import Ava from "../assets/Ava.png";
 import Ruby from "../assets/ruby.png";
 import Zoe from "../assets/Zoe.png";
 import Max from "../assets/Max.png";
+import Button from '../components/Button';
+
 
 const Testimonial = () => {
   return (
@@ -50,10 +52,8 @@ const Testimonial = () => {
       {/* Button */}
       <div className="my-16 flex justify-center">
         <a
-          href="#"
-          className="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
-        >
-          Get Started
+          href="#" >
+      <Button />
         </a>
       </div>
     </section>

@@ -2,3 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    @apply bg-gray-100 text-gray-900;
+}
+
+a {
+    @apply text-blue-500 hover:text-blue-700;
+}
+
+button {
+    @apply p-3 px-6 pt-2 text-white bg-brightRed rounded-full  hover:bg-brightRedLight;
+}
+
+input,
+textarea {
+    @apply border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-brightRed;
+}
+
