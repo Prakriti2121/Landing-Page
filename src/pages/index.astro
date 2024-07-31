@@ -9,13 +9,24 @@ import Testimonial from '../components/Testimonial';
 import CallToAction from '../components/CallToAction';
 import Footer from '../components/Footer';
 import tailwind from '@astrojs/tailwind';
+
+const navLinks = ["Pricing", "Product", "About Us", "Careers", "Community"];
+const logoSrc = "../src/assets/pagelogo.png";
+
+const heroProps = {
+  title: "Bring everyone together to build better products",
+  description: "Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.",
+  buttonText: "Secondary Button",
+  buttonVariant: "secondary",
+  buttonAction: () => alert("Secondary Button Clicked!"),
+  imageSrc: "src/assets/illustration-intro.png"
+};
 ---
 <Layout title="Welcome to Astro.">
-	<Navbar />	
-	<Hero />
-	<Features />
-	<Testimonial />
-	<CallToAction />
-	<Footer />
+  <Navbar links={navLinks} logoSrc={logoSrc} />
+  <Hero {...heroProps} />
+  <Features />
+  <Testimonial />
+  <CallToAction />
+  <Footer />
 </Layout>
-
