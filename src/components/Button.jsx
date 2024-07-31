@@ -16,7 +16,7 @@ const buttonVariants = cva(
 );
 
 // Define the Button component
-const Button = ({ variant, children, ...props }) => {
+const Button = ({ variant, children = "Button", ...props }) => {
   return (
     <button className={buttonVariants({ variant })} {...props}>
       {children}
