@@ -33,12 +33,7 @@ const Features = () => {
         </div>
         <div className="flex flex-col space-y-8 md:w-1/2">
           {featureData.map((item, index) => (
-            <FeatureItem
-              key={index}
-              number={item.number}
-              title={item.title}
-              description={item.description}
-            />
+              <FeatureItem key={index} {...item} />
           ))}
         </div>
       </div>
